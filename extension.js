@@ -55,14 +55,14 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "AchaeaBot",
         language: "english",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
         cmdDeletion: true,
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
-        maximumAfk: 120,
+        maximumAfk: 300,
         afkRemoval: true,
         maximumDc: 60,
         bouncerPlus: true,
@@ -72,10 +72,10 @@
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
-        voteSkip: false,
-        voteSkipLimit: 10,
+        voteSkip: true,
+        voteSkipLimit: 4,
         timeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 30,
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
@@ -91,9 +91,9 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
-        motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motdEnabled: true,
+        motdInterval: 20,
+        motd: "Welcome to the Achaea\'s Plug.dj communityy",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
@@ -104,8 +104,8 @@
         youtubeLink: null,
         website: null,
         intervalMessages: [],
-        messageInterval: 5,
-        songstats: true,
+        messageInterval: 20,
+        songstats: false,
         commandLiteral: "!",
         blacklists: {
             NSFW: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
